@@ -4,10 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Document</title>
 </head>
 <body>
+
+    <h1>Love Maths</h1>
+
+    <div class="game-area">
+        <div class="controls-area">
+            <button class="btn--big btn--green"><i class="fa-solid fa-plus"></i></button>
+            <button class="btn--big btn--blue"><i class="fa-solid fa-minus"></i></button>
+            <button class="btn--big btn--orange"><i class="fa-solid fa-xmark"></i></button>
+            <button class="btn--big btn--red"><i class="fa-solid fa-divide"></i></button>
+        </div>
+        <div class="question-area">
+            <span id="operand1">0</span>
+            <span id="operator">x</span>
+            <span id="operand2">0</span>
+            <span>=</span>
+        </div>
+        <p id="answer-message">Enter your answer here:</p>
+        <input id="answer-box" type="number">
+    </div>
+    <button>Submit</button>
+
+    <div class="score-area">
+        <p class="correct-answers">Correct Answers: <span id="correct">0</span></p>
+        <p class="incorrect-answers">Incorrect Answers: <span id="incorrect">0</span></p>
+    </div>
+
+
     <script src="assets/js/script.js"></script>
 </body>
 </html>
