@@ -1,3 +1,4 @@
+// Get all the buttons and add event listeners to them
 document.addEventListener('DOMContentLoaded', function(){
     let buttons = document.getElementsByTagName('button')
 
@@ -13,8 +14,12 @@ document.addEventListener('DOMContentLoaded', function(){
     }
 })
 
+/**
+ * Displays 2 random numbers
+ */
 function runGame(){
-
+    let num1 = Math.floor(Math.random() * 25 + 1)
+    let num2 = Math.floor(Math.random() * 25 + 1)
 }
 
 function checkScore(){
@@ -44,3 +49,4 @@ function displaySubtractQuestion(){
 function displayMultiplyQuestion(){
     
 }
+
